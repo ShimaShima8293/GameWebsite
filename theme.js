@@ -4,6 +4,7 @@ function changeTheme() {
     if (theme > 2) {
         theme = 0;
     }
+    
     switch (theme) {
         case 0:
             document.documentElement.style.setProperty("--color1", "#112211");
