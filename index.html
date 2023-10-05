@@ -28,7 +28,11 @@
         <ul>
             <li><a href="#mokuji">目次</a></li>
             <li><a href="#links">リンクなど</a></li>
+            <li><a href="#download">ゲームのダウンロード方法</a></li>
             <li><a href="#sousa">操作方法</a></li>
+            <li><a href="#joycon">ゲームパッドの使い方</a></li>
+            <li><a href="#map">Google Sheetsからのマップの読み込み方法</a></li>
+            <li><a href="#error">ゲームを起動できないときの対処法</a></li>
             <!-- <li><a href="#modes">ウィンドウモードについて</a></li> -->
             <!-- <li><a href="#environment">動作環境</a></li> -->
             <!-- <li><a href="#version">更新履歴</a></li> -->
@@ -45,6 +49,19 @@
             <li><a href="https://docs.google.com/presentation/d/1o-q-KiuGbny833vo0eGTevGA-NCBy_1p_tRA4sZwemU/edit#slide=id.p"
                     class="external" target="_blank">スライド</a></li>
         </ul>
+
+        <h2 id="download">ゲームのダウンロード方法</h2>
+        <h3>1. ダウンロード</h3>
+        <img src="images/download/1.png" class="medium-image">
+        <p><a href="https://github.com/ShimaShima8293/Game/releases/latest" class="external" target="_blank">ここ</a>のページの「Game_○○-○○-○○.zip」の様なリンクをクリック。</p>
+
+        <h3>2. 解凍（展開）</h3>
+        <img src="images/download/2.png" class="medium-image">
+        <p>ダウンロードしたファイルを右クリック→すべて展開をクリック。そのあとに何かウィンドウが表示されるので「展開」をクリック。</p>
+
+        <h3>3. 起動</h3>
+        <img src="images/download/3.png" class="medium-image">
+        <p>展開したフォルダの中の「Game.exe」というファイルをダブルクリックで起動。不具合があるときは<a href="#error">ゲームを起動できないときの対処法</a>の項目を読んでください。</p>
 
         <h2 id="sousa">操作方法</h2>
         <p>ゲームパッドのボタンは設定画面で変更可能。</p>
@@ -107,6 +124,33 @@
             </tr>
         </table>
 
+        <h2 id="joycon">ゲームパッドの使い方</h2>
+        <p>ゲームが起動された時に最初に検知されたゲームパッドしか使えない。なのでゲームパッドはゲーム起動前に繋いでおかなければいけない。</p>
+        <p>もしゲームパッドが使えないときはGame_Debug.exeを開いてみて黒い画面の一番上の方に下の文が出ていたらゲームパッドを検知できなかったという事がわかる。</p>
+        <img src="images/joycon/1.png" class="medium-image">
+
+        <h2 id="map">Google Sheetsからのマップの読み込み方法</h2>
+        <p>Google Sheets（<a href="https://docs.google.com/spreadsheets/d/1zakjZSsQk-vuzCy3e6AFMg7xT4u8yIOsb2d-qDg1WtY/edit#gid=0">ここ</a>）で打ち込んだマップをゲーム内で読み込む方法。かなり面倒くさいけどマップをゲームで試しながら調整できる。</p>
+        <h3>1. ダウンロード</h3>
+        <img src="images/map/1.png" class="medium-image">
+        <p>左上のファイル→ダウンロード→カンマ区切り形式（.csv）を選択</p>
+
+        <h3>2. 名前変更</h3>
+        <img src="images/map/2.png" class="medium-image">
+        <p>ファイル名から「マップ - 」の部分を消して「stage_○○_○○.csv」の様な名前にする</p>
+
+        <h3>3. 移動</h3>
+        <img src="images/map/3.png" class="medium-image">
+        <p>名前変更したファイルをゲームフォルダの中のmapフォルダに移動。ほとんどの場合「宛先には既に"stage_○○_○○.csv"という名前のファイルが存在します」のような警告が出るので「ファイルを置き換える」を選択。これでゲームを開いたら読み込めるはず</p>
+
+        <h2 id="error">ゲームを起動できないときの対処法</h2>
+        <h3>「SDL2.dllが見つからない」などのエラーが出る</h3>
+        <p>ゲームの必要なファイルが一緒にダウンロードできていないので、ゲームのフォルダごとダウンロードしなおすと直る。</p>
+
+        <h3>画面が真っ暗で文字しか表示されない</h3>
+        <p>画像フォルダが見つからないか、ゲームの開き方が良くないときに起こる。前者の場合はゲームのフォルダごとダウンロードし直して、後者の場合はGame.exeをファイルエクスプローラーからもう一度起動すると直るかも。</p>
+
+        <h3></h3>
         <!-- <h2 id="modes">ウィンドウモードについて</h2>
         <p>ゲームウィンドウのモードを変えられます。デバッグ表示(F3)で現在のモードが確認できます。</p>
 

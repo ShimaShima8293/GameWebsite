@@ -186,6 +186,10 @@ table td {
     width: 10%;
 }
 
+.medium-image {
+    width: 50%;
+}
+
 p {
     margin: 10px 10px 10px 20px;
 }
