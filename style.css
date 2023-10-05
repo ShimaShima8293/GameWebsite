@@ -187,7 +187,7 @@ table td {
 }
 
 .medium-image {
-    width: 50%;
+    width: fit-content;
 }
 
 p {
