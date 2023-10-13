@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/kaeru.png" />
     <script src="theme.js"></script>
+    <script src="version.js"></script>
     <style>
         * {
             text-align: center;
@@ -22,7 +23,7 @@
         <h1>ゲーム開発部 ホームページ(?)</h1>
     </header>
     <div id="main-content">
-        <p><a href="download/Game-23-10-09.zip" class="external" target="_blank">ゲームのダウンロード（直接）</a></p>
+        <p><a id="download" href="error" class="external" target="_blank">ゲームのダウンロード（直接）（読み込み中...）</a></p>
         <p><a href="https://github.com/ShimaShima8293/Game/releases/latest" class="external"
                 target="_blank">ゲームのダウンロード（Github経由）</a></p>
         <p><a href="https://drive.google.com/drive/folders/1S0PrfOKCQxPTouB78mT_j4Cf9J_4zZMp?usp=drive_link"
@@ -42,7 +43,8 @@
 
     <script>
         document.getElementById('lastModifiedTime').innerHTML = '最終更新: ' + document.lastModified;
-
+        document.getElementById('download').setAttribute('href', 'download/Game-' + latest + '.zip');
+        document.getElementById('download').innerHTML = 'ゲームのダウンロード（直接）（Game-' + latest + '.zip）'
     </script>
 </body>
 
