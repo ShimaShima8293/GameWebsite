@@ -7,28 +7,22 @@ function changeTheme() {
     
     switch (theme) {
         case 0:
-            document.documentElement.style.setProperty("--color1", "#112211");
-            document.documentElement.style.setProperty("--color1-2", "#001100");
-            document.documentElement.style.setProperty("--color2", "#003801");
-            document.documentElement.style.setProperty("--color2-2", "#002701");
-            document.documentElement.style.setProperty("--bgimage", 'url("images/bg.png")');
+            document.documentElement.style.setProperty("--color1", "#fffae8");
+            document.documentElement.style.setProperty("--color2", "#fff2c9");
+            document.documentElement.style.setProperty("--color3", "#ffea9f");
             break;
 
         case 1:
-            document.documentElement.style.setProperty("--color1", "#002288");
-            document.documentElement.style.setProperty("--color1-2", "#001155");
-            document.documentElement.style.setProperty("--color2", "#2244dd");
-            document.documentElement.style.setProperty("--color2-2", "#113399");
-            document.documentElement.style.setProperty("--bgimage", 'url("images/beach.png")');
+            document.documentElement.style.setProperty("--color1", "#e8fdff");
+            document.documentElement.style.setProperty("--color2", "#c9fbff");
+            document.documentElement.style.setProperty("--color3", "#9ff5ff");
             break;
 
 
         case 2:
-            document.documentElement.style.setProperty("--color1", "#444444");
-            document.documentElement.style.setProperty("--color1-2", "#222222");
-            document.documentElement.style.setProperty("--color2", "#444444");
-            document.documentElement.style.setProperty("--color2-2", "#222222");
-            document.documentElement.style.setProperty("--bgimage", 'url("")');
+            document.documentElement.style.setProperty("--color1", "#e9ffe8");
+            document.documentElement.style.setProperty("--color2", "#c9ffd2");
+            document.documentElement.style.setProperty("--color3", "#9fffb2");
             break;
     }
 }

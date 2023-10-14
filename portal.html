@@ -3,44 +3,67 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ゲーム開発部 ホームページ(?)</title>
+    <title>ゲーム開発部 ホームページ</title>
     <link rel="stylesheet" href="style_simple.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/kaeru.png" />
     <script src="theme.js"></script>
     <script src="version.js"></script>
-    <style>
-        * {
-            text-align: center;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <img src="images/kaeru.png" height="150px" style="image-rendering: pixelated;" />
-        <h1>ゲーム開発部 ホームページ(?)</h1>
+        <img src="images/kaeru.png" height="150px" class="pixel" />
+        <h1 class="title">ゲーム開発部 ホームページ</h1>
     </header>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a href="portal.html">トップ</a></li>
+            <li class="nav-list-item"><a href="zukan.html">図鑑</a></li>
+        </ul>
+    </div>
     <div id="main-content">
-        <p><a id="download" href="error" class="external" target="_blank">ゲームのダウンロード（直接）（読み込み中...）</a></p>
-        <p><a href="https://github.com/ShimaShima8293/Game/releases/latest" class="external"
-                target="_blank">ゲームのダウンロード（Github経由）</a></p>
-        <p><a href="https://drive.google.com/drive/folders/1S0PrfOKCQxPTouB78mT_j4Cf9J_4zZMp?usp=drive_link"
-                class="external" target="_blank">Google Drive</a></p>
-        <p><a href="https://docs.google.com/spreadsheets/d/1zakjZSsQk-vuzCy3e6AFMg7xT4u8yIOsb2d-qDg1WtY/edit#gid=0"
-                class="external" target="_blank">マップ編集</a></p>
-        <p><a href="https://docs.google.com/presentation/d/1o-q-KiuGbny833vo0eGTevGA-NCBy_1p_tRA4sZwemU/edit#slide=id.p"
-                class="external" target="_blank">スライド</a></p>
+        <h1>ゲーム開発部 ホームページ</h1>
+        <h2>リンク集</h2>
+        <ul>
+            <li><a id="download" href="error" class="external" target="_blank">ゲームのダウンロード（直接）（読み込み中...）</a></li>
+            <li><a href="https://github.com/ShimaShima8293/Game/releases/latest" class="external"
+                    target="_blank">ゲームのダウンロード（Github経由）</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1S0PrfOKCQxPTouB78mT_j4Cf9J_4zZMp?usp=drive_link"
+                    class="external" target="_blank">Google Drive</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/1zakjZSsQk-vuzCy3e6AFMg7xT4u8yIOsb2d-qDg1WtY/edit#gid=0"
+                    class="external" target="_blank">マップ編集</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1o-q-KiuGbny833vo0eGTevGA-NCBy_1p_tRA4sZwemU/edit#slide=id.p"
+                    class="external" target="_blank">スライド</a></li>
+        </ul>
 
     </div>
     <footer>
+        <h2>ゲーム開発部 ホームページ</h2>
+        <table>
+            <tr>
+                <th>ページ一覧</th>
+                <th>その他</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="index.html">トップ</a></li>
+                        <li><a href="zukan.html">図鑑</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a onclick="changeTheme()">色を変更</a></li>
+                    </ul>
+                </td>
+            </tr>
+
+        </table>
 
         <p class="copyright" id="lastModifiedTime">最終更新: ロード中...</p>
 
     </footer>
-
-
     <script>
         document.getElementById('lastModifiedTime').innerHTML = '最終更新: ' + document.lastModified;
         document.getElementById('download').setAttribute('href', 'download/Game-' + latest + '.zip');

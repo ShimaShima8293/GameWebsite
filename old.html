@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ゲームのサイト</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;URL=portal.html">
+    <link rel="icon" href="images/kaeru.png" />
+    <script src="theme.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/kaeru.png" height="150px" class="pixel" />
+        <h1 style="text-align: center; margin: 0">ゲームのサイト</h1>
+    </header>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a href="index.html">トップ</a></li>
+            <li class="nav-list-item"><a href="zukan.html">図鑑</a></li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <h1>トップ</h1>
+        <!-- <p>ここに色々ゲーム関連のことを書いていくつもりです。</p> -->
+        <h2 id="mokuji">目次</h2>
+        <ul>
+            <li><a href="#mokuji">目次</a></li>
+            <li><a href="#download">ゲームのダウンロード方法</a></li>
+            <li><a href="#sousa">操作方法</a></li>
+            <li><a href="#joycon">ゲームパッドの使い方</a></li>
+            <li><a href="#map">Google Sheetsからのマップの読み込み方法</a></li>
+            <li><a href="#error">ゲームを起動できないときの対処法</a></li>
+            <!-- <li><a href="#modes">ウィンドウモードについて</a></li> -->
+            <!-- <li><a href="#environment">動作環境</a></li> -->
+            <!-- <li><a href="#version">更新履歴</a></li> -->
+        </ul>
+
+        <h2 id="download">ゲームのダウンロード方法</h2>
+        <h3>1. ダウンロード</h3>
+        <img src="images/download/1.png" class="medium-image">
+        <p><a href="https://github.com/ShimaShima8293/Game/releases/latest" class="external" target="_blank">ここ</a>のページの「Game_○○-○○-○○.zip」の様なリンクをクリック。</p>
+
+        <h3>2. 解凍（展開）</h3>
+        <img src="images/download/2.png" class="medium-image">
+        <p>ダウンロードしたファイルを右クリック→すべて展開をクリック。そのあとに何かウィンドウが表示されるので「展開」をクリック。</p>
+
+        <h3>3. 起動</h3>
+        <img src="images/download/3.png" class="medium-image">
+        <p>展開したフォルダの中の「Game.exe」というファイルをダブルクリックで起動。不具合があるときは<a href="#error">ゲームを起動できないときの対処法</a>の項目を読んでください。</p>
+
+        <h2 id="sousa">操作方法</h2>
+        <p>ゲームパッドのボタンは設定画面で変更可能。</p>
+
+        <table>
+            <tr>
+                <th>動作</th>
+                <th>キー</th>
+                <th>ゲームパッド（デフォルト、機種差あり）</th>
+            </tr>
+            <tr>
+                <td>メニュー操作/移動</td>
+                <td>矢印キー</td>
+                <td>左ジョイコン</td>
+            </tr>
+            <tr>
+                <td>決定/アイテム使用</td>
+                <td>Space</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>ジャンプ</td>
+                <td>上矢印キー</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>仕掛けを使用</td>
+                <td>エンターキー</td>
+                <td>Y</td>
+            </tr>
+            <tr>
+                <td>戻る</td>
+                <td>Escape</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>終了/一時停止</td>
+                <td>Escape</td>
+                <td>Start</td>
+            </tr>
+            <tr>
+                <td>デバッグ情報を表示</td>
+                <td>F3</td>
+                <td>無し</td>
+            </tr>
+            <tr>
+                <td>現在のシーンを再ロード</td>
+                <td>F4</td>
+                <td>無し</td>
+            </tr>
+            <tr>
+                <td>ウィンドウモード切り替え</td>
+                <td>F11/Shift+F11</td>
+                <td>無し</td>
+            </tr>
+            <tr>
+                <td>強制終了</td>
+                <td>Alt + F4</td>
+                <td>無し</td>
+            </tr>
+        </table>
+
+        <h2 id="joycon">ゲームパッドの使い方</h2>
+        <p>ゲームが起動された時に最初に検知されたゲームパッドしか使えない。なのでゲームパッドはゲーム起動前に繋いでおかなければいけない。</p>
+        <p>もしゲームパッドが使えないときはGame_Debug.exeを開いてみて黒い画面の一番上の方に下の文が出ていたらゲームパッドを検知できなかったという事がわかる。</p>
+        <img src="images/joycon/1.png" class="medium-image">
+
+        <h2 id="map">Google Sheetsからのマップの読み込み方法</h2>
+        <p>Google Sheets（<a href="https://docs.google.com/spreadsheets/d/1zakjZSsQk-vuzCy3e6AFMg7xT4u8yIOsb2d-qDg1WtY/edit#gid=0">ここ</a>）で打ち込んだマップをゲーム内で読み込む方法。かなり面倒くさいけどマップをゲームで試しながら調整できる。</p>
+        <h3>1. ダウンロード</h3>
+        <img src="images/map/1.png" class="medium-image">
+        <p>左上のファイル→ダウンロード→カンマ区切り形式（.csv）を選択</p>
+
+        <h3>2. 名前変更</h3>
+        <img src="images/map/2.png" class="medium-image">
+        <p>ファイル名から「マップ - 」の部分を消して「stage_○○_○○.csv」の様な名前にする</p>
+
+        <h3>3. 移動</h3>
+        <img src="images/map/3.png" class="medium-image">
+        <p>名前変更したファイルをゲームフォルダの中のmapフォルダに移動。ほとんどの場合「宛先には既に"stage_○○_○○.csv"という名前のファイルが存在します」のような警告が出るので「ファイルを置き換える」を選択。これでゲームを開いたら読み込めるはず</p>
+
+        <h2 id="error">ゲームを起動できないときの対処法</h2>
+        <h3>「SDL2.dllが見つからない」などのエラーが出る</h3>
+        <p>ゲームの必要なファイルが一緒にダウンロードできていないので、ゲームのフォルダごとダウンロードしなおすと直る。</p>
+
+        <h3>画面が真っ暗で文字しか表示されない</h3>
+        <p>画像フォルダが見つからないか、ゲームの開き方が良くないときに起こる。前者の場合はゲームのフォルダごとダウンロードし直して、後者の場合はGame.exeをファイルエクスプローラーからもう一度起動すると直るかも。</p>
+
+        <h3>警告が出る</h3>
+        <p>初めてゲームを起動しようとすると「Windows によって PC が保護されました」といった警告が高確率で出る。この場合は詳細情報→実行を押すと起動できる。二度目以降は警告は出ないはず。</p>
+        
+        <!-- <h2 id="modes">ウィンドウモードについて</h2>
+        <p>ゲームウィンドウのモードを変えられます。デバッグ表示(F3)で現在のモードが確認できます。</p>
+
+        <table>
+            <tr>
+                <th>モード</th>
+                <th>キー</th>
+                <th>特長</th>
+            </tr>
+            <tr>
+                <td>全画面モード (Full screen)</td>
+                <td>F11 （ウィンドウモードと切り替え）</td>
+                <td>デフォルトでパフォーマンスが良いモードです。他のアプリと切り替える時に時間が掛かります。また、ファイルダイアログを表示するときにゲームからフォーカスが離れます。</td>
+            </tr>
+            <tr>
+                <td>ウィンドウモード (Windowed)</td>
+                <td>F11 （全画面モードと切り替え）</td>
+                <td>サイズ変更ができるウィンドウです。他のアプリとの切り替えをスムーズにできますが、パフォーマンスは全画面モードに劣ります。</td>
+            </tr>
+            <tr>
+                <td>最大化モード (Maximized)</td>
+                <td>Shift + F11</td>
+                <td>ウィンドウモードを全画面表示にしたようなモードです。ウィンドウモード同様他のアプリとの切り替えをスムーズにできます。パフォーマンスは全画面モードより劣るかもしれません。</td>
+            </tr>
+
+        </table> -->
+
+
+        <!-- <h2 id="environment">動作環境</h2>
+        <p>このゲームは Windows 向けに開発しています。</p>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>動作環境</th>
+                <th>開発環境</th>
+            </tr>
+            <tr>
+                <th>メモリ</th>
+                <td>1 GB 以上</td>
+                <td>16 GB</td>
+            </tr>
+            <tr>
+                <th>OS</th>
+                <td>Windows Vista 以上</td>
+                <td>Windows 10 Home</td>
+            </tr>
+            <tr>
+                <th>GPU</th>
+                <td>わかりません（有名どころなら動くと思います）</td>
+                <td>AMD Radeon R9 M370X</td>
+            </tr>
+            <tr>
+                <th>ディスプレイ解像度</th>
+                <td>1920x1080以上なら快適にプレイできます</td>
+                <td>2880x1800</td>
+            </tr>
+        </table> -->
+
+        <!--<h2 id="version">更新履歴</h2>-->
+
+    </div>
+
+    <footer>
+        <h2>ゲームのサイト</h2>
+        <table>
+            <tr>
+                <th>ページ一覧</th>
+                <th>SNS</th>
+                <th>その他</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="index.html">トップ</a></li>
+                        <li><a href="zukan.html">図鑑</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="https://github.com/ShimaShima8293" class="external" target="_blank">GitHub</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a onclick="changeTheme()">テーマを変更</a></li>
+                    </ul>
+                </td>
+            </tr>
+
+        </table>
+
+        <p class="copyright" id="lastModifiedTime">最終更新: ロード中...</p>
+
+    </footer>
+
+
+    <script>
+        document.getElementById('lastModifiedTime').innerHTML = '最終更新: ' + document.lastModified;
+
+    </script>
+</body>
+
+</html>

@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ゲームのサイト</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>ゲーム開発部 ホームページ</title>
+    <link rel="stylesheet" href="style_simple.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;URL=portal.html">
     <link rel="icon" href="images/kaeru.png" />
     <script src="theme.js"></script>
 </head>
@@ -14,11 +13,11 @@
 <body>
     <header>
         <img src="images/kaeru.png" height="150px" class="pixel" />
-        <h1 style="text-align: center; margin: 0">ゲームのサイト</h1>
+        <h1 class="title">ゲーム開発部 ホームページ</h1>
     </header>
     <div class="nav-bar">
         <ul class="nav-list">
-            <li class="nav-list-item"><a href="index.html">トップ</a></li>
+            <li class="nav-list-item"><a href="portal.html">トップ</a></li>
             <li class="nav-list-item"><a href="zukan.html">図鑑</a></li>
         </ul>
     </div>
@@ -49,7 +48,8 @@
         <p>このアイテムを取るとコインが50貰える。回収するとスコアに50ポイントが加算される</p>
         <h3>なす（隠しアイテム）</h3>
         <img class="small-image pixel" src="images/tile_27.png">
-        <p>コインと同じで当たり判定はないが取る事はできる物。取るのは必須ではない。隠し要素っていうか隠しアイテム。（1コースに1個まで隠すことができる）これを取るとステージ選択画面に取った個数が表示される。各コースから一定数なすを集めると集めたなすと交換に隠しステージが解放される。</p>
+        <p>コインと同じで当たり判定はないが取る事はできる物。取るのは必須ではない。隠し要素っていうか隠しアイテム。（1コースに1個まで隠すことができる）これを取るとステージ選択画面に取った個数が表示される。各コースから一定数なすを集めると集めたなすと交換に隠しステージが解放される。
+        </p>
         <h3>手裏剣</h3>
         <img class="small-image pixel" src="images/bullet_1.png">
         <p>このアイテムを取りSPACEキーを押すと手裏剣を前方方向に1つ飛ばすことができる。連射はできない。取るとスコアに30ポイントが加算される</p>
@@ -99,11 +99,10 @@
     </div>
 
     <footer>
-        <h2>ゲームのサイト</h2>
+        <h2>ゲーム開発部 ホームページ</h2>
         <table>
             <tr>
                 <th>ページ一覧</th>
-                <th>SNS</th>
                 <th>その他</th>
             </tr>
             <tr>
@@ -115,12 +114,7 @@
                 </td>
                 <td>
                     <ul>
-                        <li><a href="https://github.com/ShimaShima8293" class="external" target="_blank">GitHub</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a onclick="changeTheme()">テーマを変更</a></li>
+                        <li><a onclick="changeTheme()">色を変更</a></li>
                     </ul>
                 </td>
             </tr>
@@ -130,11 +124,8 @@
         <p class="copyright" id="lastModifiedTime">最終更新: ロード中...</p>
 
     </footer>
-
-
     <script>
         document.getElementById('lastModifiedTime').innerHTML = '最終更新: ' + document.lastModified;
-
     </script>
 </body>
 

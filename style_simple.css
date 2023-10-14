@@ -1,13 +1,12 @@
 :root {
-    --color1: #ffffff;
-    --color1-2: #ffffff;
-    --color2: #ffffff;
-    --color2-2: #ffffff;
+    --color1: #fffae8;
+    --color2: #fff2c9;
+    --color3: #ffea9f;
     --bgimage: url("");
 }
 
 body {
-    background-color: var(--color1-2);
+    background-color: var(--color2);
     margin: 0px;
     background-image: var(--bgimage);
     background-repeat: no-repeat;
@@ -16,8 +15,9 @@ body {
     background-position: center;
 }
 
-/* * {
-} */
+* {
+    color: #000000;
+}
 
 a {
     transition: all 0.1s;
@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-    color: #81a5ff;
+    color: #999999;
     text-decoration: none;
 }
 
@@ -35,10 +35,10 @@ h2 {
 }
 
 footer {
-    background-color: var(--color2);
+    background-color: var(--color3);
     padding: 30px;
     margin: 20px 0 0 0;
-    border-top: 10px solid var(--color2-2);
+    border-top: 10px solid var(--color2);
 }
 
 footer table th {
@@ -55,21 +55,21 @@ footer table td {
 
 header {
     /* width: 100%; */
-    background-color: var(--color2);
+    background-color: var(--color3);
     /* position: fixed; */
     padding: 30px 0 0;
     margin: 0 0 0px 0;
 }
 
 .nav-bar {
-    border-bottom: 10px solid var(--color2-2);
+    border-bottom: 10px solid var(--color2);
     width: 100%;
     position: sticky;
     left: 0;
     top: 0;
     padding: 10px 0;
     margin: 0 auto;
-    background-color: var(--color2);
+    background-color: var(--color3);
     z-index: 1;
 }
 
@@ -103,7 +103,7 @@ img {
     margin-top: 30px;
     width: 75%;
     max-width: 1000px;
-    border: 10px solid var(--color1-2);
+    border: 10px solid var(--color2);
     padding: 20px 40px 20px 40px;
     min-height: 400px;
 }
@@ -115,8 +115,8 @@ img {
 
 #index {
     padding: 20px;
-    background-color: var(--color2);
-    border: 10px solid var(--color2-2);
+    background-color: var(--color3);
+    border: 10px solid var(--color2);
     max-width: 100%;
 }
 
@@ -181,17 +181,25 @@ p {
     margin: 10px 10px 10px 20px;
 }
 
-.external {
-    /* background-image: url("images/extern_black.png");
+/* .external {
+    background-image: url("images/extern_black.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 20px;
-    padding-right: 20px; */
-    /*Space for the icon*/
-}
+    padding-right: 20px;
+} */
 
 
 
 ul {
     padding: 0 0 0 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
 }
