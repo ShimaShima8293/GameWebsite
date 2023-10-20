@@ -41,6 +41,10 @@ footer {
     border-top: 10px solid var(--color2);
 }
 
+footer table {
+    width: 100%;
+}
+
 footer table th {
     text-align: left;
     padding: 10px;
@@ -128,19 +132,18 @@ img {
 
 table {
     border-collapse: collapse;
-    min-width: 60%;
     max-width: 100%;
     margin: 0 auto;
 }
 
 table th {
     padding: 10px;
-    border: solid 1px white;
+    border: solid 1px black;
 }
 
 table td {
     padding: 5px;
-    border: solid 1px white;
+    border: solid 1px black;
 }
 
 #background {
