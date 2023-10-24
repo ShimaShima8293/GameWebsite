@@ -171,7 +171,8 @@ table td {
 }
 
 .small-image {
-    width: 10%;
+    /* min-width: 20%; */
+    height: 100px;
 }
 
 .medium-image {
