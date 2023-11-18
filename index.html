@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icon.png" />
     <script src="theme.js"></script>
+    <script src="version.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,8 @@
         <h1>トップ</h1>
         <h2>リンク集</h2>
         <ul>
-            <li><a href="download/GameInstaller.exe" class="external" target="_blank">ゲームのダウンロード</a></li>
+            <li><a id="download" target="_blank">最新版ダウンロード</a></li>
+            <li><a href="download/GameInstaller.exe" target="_blank">インストーラのダウンロード</a></li>
             <li><a href="https://drive.google.com/drive/folders/1S0PrfOKCQxPTouB78mT_j4Cf9J_4zZMp?usp=drive_link"
                     class="external" target="_blank">Google Drive</a></li>
             <li><a href="https://docs.google.com/spreadsheets/d/1zakjZSsQk-vuzCy3e6AFMg7xT4u8yIOsb2d-qDg1WtY/edit#gid=0"
@@ -185,9 +187,9 @@
 
     </footer>
     <script>
-        document.getElementById('lastModifiedTime').innerHTML = '最終更新: ' + document.lastModified;
-        document.getElementById('download').setAttribute('href', 'download/Game-' + latest + '.zip');
-        document.getElementById('download').innerHTML = 'ゲームのダウンロード（Game-' + latest + '.zip）'
+        document.getElementById("lastModifiedTime").innerHTML = "最終更新: " + document.lastModified;
+        document.getElementById("download").setAttribute("href", "download/" + latest);
+        document.getElementById("download").innerHTML += "（" + latest + "）"
     </script>
 </body>
 
