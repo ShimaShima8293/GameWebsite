@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>更新履歴 - ゲーム開発部 ホームページ</title>
+    <link rel="stylesheet" href="style_simple.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" />
+    <script src="theme.js"></script>
+    <script src="version.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png" height="150px" class="pixel" />
+        <h1 class="title">ゲーム開発部 ホームページ</h1>
+    </header>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a href="index.html">トップ</a></li>
+            <li class="nav-list-item"><a href="zukan.html">図鑑</a></li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <h1>更新履歴</h1>
+        <p>バージョン名をクリックでダウンロードできるぞ～</p>
+        <h3><a href="download/Game-23-11-18.zip">23-11-18</a></h3>
+        
+            <p>シューティングにいろいろ追加</p>
+            <p>集めたコインが蓄積されるようにした</p>
+            <p>上下に動く足場ブロックの動作を追加</p>
+        
+        <h3><a href="download/Game-23-11-06.zip">23-11-06</a></h3>
+        
+            <p>シューティングゲーム（意味深）を追加</p>
+        
+        <h3><a href="download/Game-23-10-31.zip">23-10-31</a></h3>
+        
+            <p>ショップを追加・細かいところを改善</p>
+
+            <p>タイトル画面にショップの項目を追加した</p>
+            <p>ボスを倒してからじゃないとゴールできないようにした</p>
+            <p>弾を消す基準を発射されてからの経過時間にした</p>
+        
+        <h3><a href="download/Game-23-10-28.zip">23-10-28</a></h3>
+        
+            <p>バネの当たり判定を修正</p>
+            <p>鯉のぼりの火の当たり判定を修正</p>
+            <p>ゴールの当たり判定を修正</p>
+        
+        <h3><a href="download/Game-23-10-24.zip">23-10-24</a></h3>
+        
+            <p>ボス戦用HPバーを追加</p>
+        
+        <h3><a href="download/Game-23-10-21.zip">23-10-21</a></h3>
+        
+            <p>鯉のぼりの弾に当たった時にダメージを受けるようにした</p>
+            <p>会話シーンとボス戦を追加</p>
+            <p>メモリの不具合を修正</p>
+        
+        <h3><a href="download/Game-23-10-20-1.zip">23-10-20-1</a></h3>
+        
+            <p>鯉のぼりを倒すと弾も消えるようにした</p>
+            <p>コードをめっちゃ整理した</p>
+            <p>手裏剣を実装</p>
+        
+        <h3><a href="download/Game-23-10-20.zip">23-10-20</a></h3>
+        
+            <p>細かいところを変更・改善</p>
+
+            <p>遊び方画面に「ブラウザでウェブサイトを開く」の項目を追加</p>
+            <p>土管を追加</p>
+            <p>背景が見切れるバグを修正</p>
+            <p>仮のエンディング画面を追加</p>
+        
+        <h3><a href="download/Game-23-10-09.zip">23-10-09</a></h3>
+        
+            <p>敵と針の当たり判定を調整</p>
+            <p>設定画面を改善</p>
+            <p>ブロックを二つ以上「+」を使って重ねられるようにした</p>
+        
+    </div>
+    <footer>
+        <h2>ゲーム開発部 ホームページ</h2>
+        <table>
+            <tr>
+                <th>ページ一覧</th>
+                <th>その他</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="index.html">トップ</a></li>
+                        <li><a href="zukan.html">図鑑</a></li>
+                        <li><a href="versions.html">更新履歴</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a onclick="changeTheme()">色を変更</a></li>
+                    </ul>
+                </td>
+            </tr>
+
+        </table>
+
+        <p class="copyright" id="lastModifiedTime">最終更新: ロード中...</p>
+
+    </footer>
+    <script>
+        document.getElementById("lastModifiedTime").innerHTML = "最終更新: " + document.lastModified;
+        document.getElementById("download").setAttribute("href", "download/" + latest);
+        document.getElementById("download").innerHTML += "（" + latest + "）"
+    </script>
+</body>
+
+</html>
