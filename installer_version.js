@@ -1,1 +1,1 @@
-const installer_version = "1.0";
+const installer_version = "1.0.1";
