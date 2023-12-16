@@ -9,6 +9,7 @@
     <link rel="icon" href="images/icon.png" />
     <script src="theme.js"></script>
     <script src="version.js"></script>
+    <script src="installer_version.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <h2>リンク集</h2>
         <ul>
             <li><a id="download" target="_blank">最新版ダウンロード</a></li>
-            <li><a href="download/GameInstaller.exe" target="_blank">インストーラのダウンロード</a></li>
+            <li><a id="installer_download" href="download/GameInstaller.exe" target="_blank">インストーラのダウンロード</a></li>
             <li><a href="versions.html">更新履歴</a></li>
             <li><a href="https://drive.google.com/drive/folders/1S0PrfOKCQxPTouB78mT_j4Cf9J_4zZMp?usp=drive_link"
                     class="external" target="_blank">Google Drive</a></li>
@@ -190,8 +191,9 @@
     </footer>
     <script>
         document.getElementById("lastModifiedTime").innerHTML = "最終更新: " + document.lastModified;
-        document.getElementById("download").setAttribute("href", "download/" + latest);
-        document.getElementById("download").innerHTML += "（" + latest + "）"
+        document.getElementById("download").setAttribute("href", "download/Game-" + latest + ".zip");
+        document.getElementById("download").innerHTML += "（バージョン" + latest + "）"
+        document.getElementById("installer_download").innerHTML += "（バージョン" + installer_version + "）"
     </script>
 </body>
 
