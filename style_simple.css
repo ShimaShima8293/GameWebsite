@@ -1,3 +1,5 @@
+@font-face { font-family: Shinonome; src: url("fonts/JF-Dot-Shinonome14.ttf")}
+
 :root {
     --color1: #fffae8;
     --color2: #fff2c9;
@@ -17,6 +19,9 @@ body {
 
 * {
     color: #000000;
+    font-family: Shinonome;
+    font-weight: normal;
+    line-height: 150%;
 }
 
 a {
