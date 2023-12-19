@@ -1,4 +1,5 @@
 @font-face { font-family: Shinonome; src: url("fonts/JF-Dot-Shinonome14.ttf")}
+@font-face { font-family: ShinonomeB; src: url("fonts/JF-Dot-Shinonome14B.ttf")}
 
 :root {
     --color1: #fffae8;
@@ -36,7 +37,7 @@ a:hover {
 }
 
 b {
-    font-weight: bold;
+    font-family: ShinonomeB;
 }
 
 h2 {
